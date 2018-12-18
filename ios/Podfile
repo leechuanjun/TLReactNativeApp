@@ -9,7 +9,7 @@ target 'TLReactNativeApp' do
 
   react_native_path = '../node_modules/react-native'
 
-  pod "yoga", :path => react_native_path + '/ReactCommon/yoga'
+  pod 'yoga', :path => react_native_path + '/ReactCommon/yoga'
   pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
   pod 'React', :path => react_native_path, :subspecs =>[
    'Core',
