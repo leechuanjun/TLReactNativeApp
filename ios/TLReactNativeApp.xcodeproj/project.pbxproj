@@ -16,6 +16,7 @@
 		7E89201621C8E6D500E6022B /* TLReactNativeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89201521C8E6D500E6022B /* TLReactNativeAppUITests.m */; };
 		7E89202521C904F900E6022B /* TLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89202421C904F900E6022B /* TLRootViewController.m */; };
 		7E89202821C9052D00E6022B /* TLReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89202721C9052D00E6022B /* TLReactViewController.m */; };
+		7E89202A21C90AA800E6022B /* ip.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E89202921C90AA800E6022B /* ip.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7E89202421C904F900E6022B /* TLRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLRootViewController.m; sourceTree = "<group>"; };
 		7E89202621C9052D00E6022B /* TLReactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLReactViewController.h; sourceTree = "<group>"; };
 		7E89202721C9052D00E6022B /* TLReactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLReactViewController.m; sourceTree = "<group>"; };
+		7E89202921C90AA800E6022B /* ip.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ip.txt; sourceTree = "<group>"; };
 		B2650E08E293D0D81C0214DD /* Pods-TLReactNativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLReactNativeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLReactNativeApp/Pods-TLReactNativeApp.release.xcconfig"; sourceTree = "<group>"; };
 		DFF5DCA9CA7412741FDC5111 /* libPods-TLReactNativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TLReactNativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				7E891FFC21C8E6D400E6022B /* LaunchScreen.storyboard */,
 				7E891FFF21C8E6D400E6022B /* Info.plist */,
 				7E89200021C8E6D400E6022B /* main.m */,
+				7E89202921C90AA800E6022B /* ip.txt */,
 			);
 			path = TLReactNativeApp;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				7E891FFE21C8E6D400E6022B /* LaunchScreen.storyboard in Resources */,
 				7E891FFB21C8E6D400E6022B /* Assets.xcassets in Resources */,
+				7E89202A21C90AA800E6022B /* ip.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68QKWWUHPW;
 				INFOPLIST_FILE = TLReactNativeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68QKWWUHPW;
 				INFOPLIST_FILE = TLReactNativeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
