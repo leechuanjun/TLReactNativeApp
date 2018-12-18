@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6859801F0C60377DEF20362E /* libPods-TLReactNativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF5DCA9CA7412741FDC5111 /* libPods-TLReactNativeApp.a */; };
-		7E891FF321C8E6D300E6022B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E891FF221C8E6D300E6022B /* AppDelegate.m */; };
-		7E891FF621C8E6D300E6022B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E891FF521C8E6D300E6022B /* ViewController.m */; };
-		7E891FF921C8E6D300E6022B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E891FF721C8E6D300E6022B /* Main.storyboard */; };
+		7E891FF321C8E6D300E6022B /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E891FF221C8E6D300E6022B /* TLAppDelegate.m */; };
 		7E891FFB21C8E6D400E6022B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E891FFA21C8E6D400E6022B /* Assets.xcassets */; };
 		7E891FFE21C8E6D400E6022B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E891FFC21C8E6D400E6022B /* LaunchScreen.storyboard */; };
 		7E89200121C8E6D400E6022B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89200021C8E6D400E6022B /* main.m */; };
 		7E89200B21C8E6D500E6022B /* TLReactNativeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89200A21C8E6D500E6022B /* TLReactNativeAppTests.m */; };
 		7E89201621C8E6D500E6022B /* TLReactNativeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89201521C8E6D500E6022B /* TLReactNativeAppUITests.m */; };
+		7E89202521C904F900E6022B /* TLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89202421C904F900E6022B /* TLRootViewController.m */; };
+		7E89202821C9052D00E6022B /* TLReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89202721C9052D00E6022B /* TLReactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +38,8 @@
 /* Begin PBXFileReference section */
 		2BE47223A67C02D9072AEA95 /* Pods-TLReactNativeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLReactNativeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLReactNativeApp/Pods-TLReactNativeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7E891FEE21C8E6D300E6022B /* TLReactNativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLReactNativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E891FF121C8E6D300E6022B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7E891FF221C8E6D300E6022B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7E891FF421C8E6D300E6022B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7E891FF521C8E6D300E6022B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7E891FF821C8E6D300E6022B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E891FF121C8E6D300E6022B /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
+		7E891FF221C8E6D300E6022B /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
 		7E891FFA21C8E6D400E6022B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E891FFD21C8E6D400E6022B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E891FFF21C8E6D400E6022B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +50,10 @@
 		7E89201121C8E6D500E6022B /* TLReactNativeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLReactNativeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E89201521C8E6D500E6022B /* TLReactNativeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLReactNativeAppUITests.m; sourceTree = "<group>"; };
 		7E89201721C8E6D500E6022B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E89202321C904F900E6022B /* TLRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLRootViewController.h; sourceTree = "<group>"; };
+		7E89202421C904F900E6022B /* TLRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLRootViewController.m; sourceTree = "<group>"; };
+		7E89202621C9052D00E6022B /* TLReactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLReactViewController.h; sourceTree = "<group>"; };
+		7E89202721C9052D00E6022B /* TLReactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLReactViewController.m; sourceTree = "<group>"; };
 		B2650E08E293D0D81C0214DD /* Pods-TLReactNativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLReactNativeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLReactNativeApp/Pods-TLReactNativeApp.release.xcconfig"; sourceTree = "<group>"; };
 		DFF5DCA9CA7412741FDC5111 /* libPods-TLReactNativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TLReactNativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,11 +118,12 @@
 		7E891FF021C8E6D300E6022B /* TLReactNativeApp */ = {
 			isa = PBXGroup;
 			children = (
-				7E891FF121C8E6D300E6022B /* AppDelegate.h */,
-				7E891FF221C8E6D300E6022B /* AppDelegate.m */,
-				7E891FF421C8E6D300E6022B /* ViewController.h */,
-				7E891FF521C8E6D300E6022B /* ViewController.m */,
-				7E891FF721C8E6D300E6022B /* Main.storyboard */,
+				7E891FF121C8E6D300E6022B /* TLAppDelegate.h */,
+				7E891FF221C8E6D300E6022B /* TLAppDelegate.m */,
+				7E89202321C904F900E6022B /* TLRootViewController.h */,
+				7E89202421C904F900E6022B /* TLRootViewController.m */,
+				7E89202621C9052D00E6022B /* TLReactViewController.h */,
+				7E89202721C9052D00E6022B /* TLReactViewController.m */,
 				7E891FFA21C8E6D400E6022B /* Assets.xcassets */,
 				7E891FFC21C8E6D400E6022B /* LaunchScreen.storyboard */,
 				7E891FFF21C8E6D400E6022B /* Info.plist */,
@@ -219,6 +221,7 @@
 		7E891FE621C8E6D300E6022B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TL;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = lichuanjun;
 				TargetAttributes = {
@@ -262,7 +265,6 @@
 			files = (
 				7E891FFE21C8E6D400E6022B /* LaunchScreen.storyboard in Resources */,
 				7E891FFB21C8E6D400E6022B /* Assets.xcassets in Resources */,
-				7E891FF921C8E6D300E6022B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E891FF621C8E6D300E6022B /* ViewController.m in Sources */,
+				7E89202521C904F900E6022B /* TLRootViewController.m in Sources */,
 				7E89200121C8E6D400E6022B /* main.m in Sources */,
-				7E891FF321C8E6D300E6022B /* AppDelegate.m in Sources */,
+				7E89202821C9052D00E6022B /* TLReactViewController.m in Sources */,
+				7E891FF321C8E6D300E6022B /* TLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7E891FF721C8E6D300E6022B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E891FF821C8E6D300E6022B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E891FFC21C8E6D400E6022B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

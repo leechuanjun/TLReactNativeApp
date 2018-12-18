@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TLReactViewController.h
 //  TLReactNativeApp
 //
 //  Created by lichuanjun on 2018/12/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TLReactViewController : UIViewController
 
 @end
-

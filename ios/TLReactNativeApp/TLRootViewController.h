@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  TLRootViewController.h
 //  TLReactNativeApp
 //
 //  Created by lichuanjun on 2018/12/18.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface TLRootViewController : UIViewController
 
 @end
-

@@ -1,22 +1,29 @@
 //
-//  AppDelegate.m
+//  TLAppDelegate.m
 //  TLReactNativeApp
 //
 //  Created by lichuanjun on 2018/12/18.
 //  Copyright © 2018 lichuanjun. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "TLAppDelegate.h"
+#import "TLRootViewController.h"
 
-@interface AppDelegate ()
+@interface TLAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation TLAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //初始化页面
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *wNavi = [[UINavigationController alloc] initWithRootViewController:[[TLRootViewController alloc]init]];
+    self.window.rootViewController = wNavi;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
