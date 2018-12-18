@@ -11,36 +11,51 @@
 
 @interface TLReactViewController ()
 
+@property (nonatomic, strong) NSURL *jsCodeLocation;
+@property (nonatomic, strong) NSDictionary *propertiesDict;
 @end
 
 @implementation TLReactViewController
 
 -(void)loadView {
-    NSDictionary *propertiesDict = @{
-                                     @"scores" : @[
-                                             @{
-                                                 @"name" : @"Alex",
-                                                 @"value" : @"42"
-                                                 },
-                                             @{
-                                                 @"name" : @"Joel",
-                                                 @"value" : @"10"
-                                                 }
-                                             ]
-                                     };
-//    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://10.15.233.171:8081/index.bundle?platform=ios"];
-    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName:@"TLReactNativeApp"
-                                                 initialProperties:propertiesDict
-                                                     launchOptions:nil];
+    self.propertiesDict = @{
+                             @"scores" : @[
+                                     @{
+                                         @"name" : @"Alex",
+                                         @"value" : @"42"
+                                         },
+                                     @{
+                                         @"name" : @"Joel",
+                                         @"value" : @"10"
+                                         }
+                                     ]
+                             };
+
+    // for release
+    self.jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"index.ios" withExtension:@"jsbundle"];
+    //for debug
+//    self.jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+//    self.jsCodeLocation = [NSURL URLWithString:@"http://10.15.233.171:8081/index.bundle?platform=ios"];
+    if (self.jsCodeLocation == nil) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"警告" message:@"加载index.ios.jsbundle文件失败" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            
+        }];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+        return [super loadView];
+    }
     
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:self.jsCodeLocation
+                                                        moduleName:@"TLReactNativeApp"
+                                                 initialProperties:self.propertiesDict
+                                                     launchOptions:nil];
+
     self.view = rootView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

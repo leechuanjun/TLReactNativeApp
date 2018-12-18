@@ -4,6 +4,13 @@
    <FileRef
       location = "group:TLReactNativeApp.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:bundle"
+      name = "bundle">
+      <FileRef
+         location = "group:bundle/index.ios.jsbundle">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
