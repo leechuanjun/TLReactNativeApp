@@ -32,7 +32,7 @@
                              };
 
     // for release
-    self.jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"index.ios" withExtension:@"jsbundle"];
+    self.jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle/index.ios" withExtension:@"jsbundle"];
     //for debug
 //    self.jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
 //    self.jsCodeLocation = [NSURL URLWithString:@"http://10.15.233.171:8081/index.bundle?platform=ios"];
